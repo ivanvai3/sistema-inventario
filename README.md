@@ -1,79 +1,78 @@
-Sistema de Gestión de Inventario
-Este proyecto es un sistema de gestión de inventario que permite registrar productos, administrar stock y registrar movimientos de entrada y salida por tipo de usuario (Administrador o Almacenista).
-
-Información del Desarrollo
 IDE Utilizado
 Visual Studio Code
 
 Versión del Lenguaje de Programación Utilizado
 PHP 7.4.10
 
-DBMS Utilizado y Versión
-MySQL 5.7.31
+Frameworks y Librerías Utilizadas
+Laravel 8.83.27
 
-Requerimientos Previos
-PHP 7.4 o superior
+Laravel Mix (Webpack 4)
 
 Composer
 
-MySQL 5.7 o superior
+NPM
 
-Node.js y NPM (opcional para compilar assets)
+Bootstrap 5
 
-Laravel 8.x
+jQuery 3.6.0
 
-Pasos para Instalar y Ejecutar
-Clonar el Repositorio
+DataTables 1.13.6
+
+ApexCharts 3.37.1
+
+Font Awesome 6
+
+SweetAlert2 11.7.12
+
+DBMS Utilizado y su Versión
+MySQL 8.0.31 (XAMPP)
+
+Paquetes y Librerías Utilizadas para Roles y Permisos
+spatie/laravel-permission versión ^5.11.0
+
+Lista de Pasos para Ejecutar el Proyecto
+Clonar el repositorio
 
 bash
 Copiar
 Editar
-git clone <URL_DEL_REPOSITORIO>
-cd <NOMBRE_DEL_PROYECTO>
-Instalar Dependencias
+git clone [URL-del-repositorio]
+cd [nombre-del-proyecto]
+Instalar dependencias de PHP
 
-arduino
+bash
 Copiar
 Editar
 composer install
+Instalar dependencias de JavaScript
+
+bash
+Copiar
+Editar
 npm install
 npm run dev
-Configurar el Entorno
+Configurar archivo .env
 
-Copia .env.example a .env
+Copia el archivo .env.example a .env.
 
-Configura las credenciales de tu base de datos en el archivo .env
+Configura la conexión a tu base de datos.
 
-Ejecuta:
+Generar la llave de la aplicación
 
-vbnet
+bash
 Copiar
 Editar
 php artisan key:generate
-Ejecutar las Migraciones
+Ejecutar migraciones (si aplica)
 
-nginx
+bash
 Copiar
 Editar
 php artisan migrate
-Crear los Roles Iniciales
+Levantar el servidor de desarrollo
 
-Ingresa a Tinker:
-
-nginx
-Copiar
-Editar
-php artisan tinker
-Ejecuta:
-
-css
-Copiar
-Editar
-\App\Models\Role::create(['name' => 'Administrador']);
-\App\Models\Role::create(['name' => 'Almacenista']);
-Levantar el Servidor de Desarrollo
-
-nginx
+bash
 Copiar
 Editar
 php artisan serve
