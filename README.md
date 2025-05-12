@@ -13,15 +13,9 @@ Composer
 
 NPM
 
-Bootstrap 5
-
-jQuery 3.6.0
+tailwind
 
 DataTables 1.13.6
-
-ApexCharts 3.37.1
-
-Font Awesome 6
 
 SweetAlert2 11.7.12
 
